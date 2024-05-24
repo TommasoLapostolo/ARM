@@ -9,6 +9,6 @@ complemento:	PUSH {fp, lr}
 		mvn r1, r1		@complementare in r1
 		and r1, r1, #ff		@ultimo B di r1 in r1
 		bic r0, r0, #ff		@primi 3B di r0 in r0
-		add r0, r0, r1		@gli sommo
+		add r0, r0, r1		@li sommo
 		POP {r1}		@ripristino
 		POP {fp, pc}		@ritorno
